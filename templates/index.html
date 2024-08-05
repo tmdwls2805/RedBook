@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>RedBook</title>
+    <link rel="icon" href="img/logo/favicon.png">
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/interBook.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/classy-nav.min.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/includeHTML.js"></script>
+</head>
+<body>
+    <div id="headers"></div>
+    <section class="welcome_area bg-img background-overlay" style="background-image: url(img/bg-img/bg-1.png);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="hero-content">
+                        <h6>&nbsp;추천 소설</h6><br>
+                        <h3>영화와도 같은 강렬한 사건과</h3>
+                           <h3> 매혹적인 문체로 시선을 사로잡는</h3>
+                           <h3> 한국형 영 어덜트 소설 『아몬드』</h3><br><br>
+                        <button class="button2">지금 보러가기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="welcome_area bg-img background-overlay" style="background-image: url(img/bg-img/bg-0.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="hero-content" align="right">
+                        <h6>추천 소설</h6><br>
+                        <h3>문학성과 다양성, 참신성을 기치로</h3>
+                        <h3>   한국문학의 미래를 이끌어 갈</h3>
+                        <h3>   신예들의 작품을 엄선한 「오늘의 젊은 작가」의</h3>
+                        <h3>   열세 번째 작품 『82년생 김지영』</h3><br><br>
+                           <button class="button2">지금 보러가기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="welcome_area bg-img background-overlay" style="background-image: url(img/bg-img/bg-2.png);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="hero-content">
+                        <h6>추천 소설</h6><br>
+                        <h3>여성 명의 희생자, 하나로 꿰매진 몸통!</h3>
+                        <h3>범인과의 피말리는 두뇌싸움! 미친 가독성!</h3>
+                        <br><br>
+                           <button class="button2">지금 보러가기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new_arrivals_area section-padding-80 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>새로운 상품</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="popular-products-slides owl-carousel">
+                        <a href="{{ json[0]['url'] }}">
+                            <div class="single-product-wrapper">
+                                <div class="product-img">
+                                    <img style="width: 255px; height: auto; overflow: hidden;" src="{{ json[0]['img'] }}" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <span>{{ json[0]["site"] }}</span>
+                                    <h6>{{ json[0]["title"] }}</h6>
+                                    <p class="product-price">{{ json[0]["price"] }}원</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ json[1]['url'] }}">
+                            <div class="single-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ json[1]['img'] }}" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <span>{{ json[1]["site"] }}</span>
+                                    <h6>{{ json[1]["title"] }}</h6>
+                                    <p class="product-price">{{ json[1]["price"] }}원</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ json[2]['url'] }}">
+                            <div class="single-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ json[2]['img'] }}" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <span>{{ json[2]["site"] }}</span>
+                                    <h6>{{ json[2]["title"] }}</h6>
+                                    <p class="product-price">{{ json[2]["price"] }}원</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ json[3]['url'] }}">
+                            <div class="single-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ json[3]['img'] }}" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <span>{{ json[3]["site"] }}</span>
+                                    <h6>{{ json[3]["title"] }}</h6>
+                                    <p class="product-price">{{ json[3]["price"] }}원</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ json[4]['url'] }}">
+                            <div class="single-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ json[4]['img'] }}" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <span>{{ json[4]["site"] }}</span>
+                                    <h6>{{ json[4]["title"] }}</h6>
+                                    <p class="product-price">{{ json[4]["price"] }}원</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="{{ json[5]['url'] }}">
+                            <div class="single-product-wrapper">
+                                <div class="product-img">
+                                    <img src="{{ json[5]['img'] }}" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <span>{{ json[5]["site"] }}</span>
+                                    <h6>{{ json[5]["title"] }}</h6>
+                                    <p class="product-price">{{ json[5]["price"] }}원</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="brands-area d-flex align-items-center justify-content-between">
+        <div class="single-brands-logo">
+            <img src="#" alt="">
+        </div>
+        <div class="single-brands-logo">
+            <a href="http://book.interpark.com/bookPark/html/book.html">
+                <img src="img/made-img/ll.png" alt="">
+            </a>
+        </div>
+        <div class="single-brands-logo">
+            <a href="http://www.yes24.com">
+                <img src="img/made-img/yl.jpg" alt="">
+            </a>
+        </div>
+        <div class="single-brands-logo">
+            <a href="http://www.kyobobook.co.kr/index.laf?OV_REFFER=https://www.google.com/">
+                <img src="img/made-img/kl.jpg" alt="">
+            </a>
+        </div>
+        <div class="single-brands-logo">
+            <img src="#" alt="">
+        </div>
+    </div>
+    <div id="footers"></div>
+</body>
+</html>
